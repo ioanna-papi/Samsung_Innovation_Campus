@@ -89,5 +89,6 @@ print("The products that a customer can buy with 100-150 euros are:")
 by_name.size().index
 
 # 5th question
-
+contains_handbag = df.loc[df['Description'].str.contains("HANDBAG",case = False)]
+print("The products that include the word HANDBAG: ", contains_handbag)
 
