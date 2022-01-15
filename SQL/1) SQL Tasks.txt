@@ -1,15 +1,8 @@
 # Instructions
-
-
 1. Import the database backup BackupFull.sql
 2. Write queries in order to answer tasks 1-10
 
-# Material
-
-Video on how to restore a backup: https://www.youtube.com/watch?v=TGAPgBowt4M&list=PLjzUPFoNqvloN3aKMu8g4JCLIJ3QAEH0e&index=1
-
 # Tasks
-
 1. Write a query to get all employee details from the employee table order by first salary, descending
 2. Write a query to get the first 2 characters of first name from employees table
 3. Write a query to display the last name of all employees who have both "b" and "c" in their first name
@@ -20,3 +13,5 @@ Video on how to restore a backup: https://www.youtube.com/watch?v=TGAPgBowt4M&li
 8. Write a query to find the name first_name, last_name and hire date of the employees hired before 'Jones'
 9. Write a query to extract the month from the hire date of the employees
 10. Write a query to get the details of the employees where the length of their first name is greater than or equal to 5
+
+
