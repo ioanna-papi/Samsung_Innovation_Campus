@@ -67,6 +67,9 @@ customers_by_id = df.groupby('CustomerID')
 print("Total number of different customers is: ", len(customers_by_id.size()))
 
 # 2nd question
-
+by_country = df.groupby('Country')
+print('Countries that have transactions with the company: \n')
+for index_country, value in by_country.size().items():
+    print(index_country)
 
  
