@@ -92,7 +92,7 @@ by_name.size().index
 # 5th question
 ''' Αν κάνουμε αναζήτηση με τον όρο 'HANDBAG', θα λάβουμε συνολικά 13 ξεχωριστά προϊόντα '''
 contains_handbag = df.loc[df['Description'].str.contains("HANDBAG",case = False)]
-print("The products that include the word HANDBAG: ", contains_handbag['Description'].unique())
+print("The products that include the word HANDBAG are: ", contains_handbag['Description'].unique())
 
 
 
