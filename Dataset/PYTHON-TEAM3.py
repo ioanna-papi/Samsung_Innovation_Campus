@@ -31,19 +31,22 @@ df.info()
     Άρα υπάρχουν στήλες με τιμές που λείπουν, η Description και η CustomerID. '''
 
 # 6th question
+''' Το dataset έχει μέγεθος 541.909 '''
 print("Total number of records: ", len(df))
     
 # DATASET CLEARING
 
 # 1st question
+''' Συνολικά αφαιρέθηκαν 135.080 εγγραφές. Άρα το dataset έχει μέγεθος 406.829 '''
 df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 
 # 2nd question
+''' Συνολικά αφαιρέθηκαν 1677 εγγραφές. Άρα το dataset έχει μέγεθος 405.152 '''
 for x in df.index :
     if (df.loc[x,'Description']=='AMAZON FEE' or df.loc[x,'Description']=='Manual' or df.loc[x,'Description']=='SAMPLES' or df.loc[x,'Description']=='POSTAGE' or df.loc[x,'Description']=='PACKING CHARGE'):
         df.drop(x, inplace = True)
 
-''' ΕΥΡΕΣΗ ΤΩΝ ΕΓΓΡΑΦΩΝ ΠΟΥ ΘΕΛΩ ΝΑ ΑΦΑΙΡΕΣΩ: (1677 συνολικά)
+''' Εύρεση των εγγραφών που θέλω να αφαιρέσω: (1677 συνολικά)
 options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
 rslt_df = df[df['Description'].isin(options)]
 print('\nResult dataframe :\n', rslt_df)  '''
