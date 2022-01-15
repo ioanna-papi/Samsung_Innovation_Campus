@@ -60,5 +60,8 @@ for x in df.index :
 # 4th question
 df['ItemTotal'] = df['Quantity'] * df['UnitPrice']
 
+# DATASET QUERIES
+
+# 1st question
 
  
