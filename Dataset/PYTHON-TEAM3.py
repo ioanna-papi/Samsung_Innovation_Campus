@@ -72,4 +72,5 @@ print('Countries that have transactions with the company: \n')
 for index_country, value in by_country.size().items():
     print(index_country)
 
- 
+# 3rd question
+
