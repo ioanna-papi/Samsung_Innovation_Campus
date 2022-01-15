@@ -12,6 +12,7 @@ import pandas as pd
 df = pd.read_csv('C:/Users/User/Documents/data.csv' ,sep  = ',', header= 'infer')
 
 # 2nd question
+print("The last 5 records are: \n")
 print(df.tail(5))
 
 # 3rd question
@@ -20,4 +21,7 @@ print("Number of columns: ", len(columns_list))
 print("Columns names: ", columns_list)
 
 # 4th question
+print("Types of columns: \n")
+print(df.dtypes)
 
+# 5th question
