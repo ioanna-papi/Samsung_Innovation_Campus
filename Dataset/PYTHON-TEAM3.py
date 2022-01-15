@@ -42,14 +42,13 @@ df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 
 # 2nd question
 ''' Συνολικά αφαιρέθηκαν 1677 εγγραφές. Άρα το dataset έχει μέγεθος 405.152 '''
-for x in df.index :
-    if (df.loc[x,'Description']=='AMAZON FEE' or df.loc[x,'Description']=='Manual' or df.loc[x,'Description']=='SAMPLES' or df.loc[x,'Description']=='POSTAGE' or df.loc[x,'Description']=='PACKING CHARGE'):
-        df.drop(x, inplace = True)
-
-''' Εύρεση των εγγραφών που θέλω να αφαιρέσω: (1677 συνολικά)
 options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
 rslt_df = df[df['Description'].isin(options)]
-print('\nResult dataframe :\n', rslt_df)  '''
+
+for x in df.index:
+    for y in rslt_df.index:
+        if (x == y ):
+            df.drop(x, inplace = True) 
         
 # 3rd question
 
