@@ -88,13 +88,13 @@ products = pd.DataFrame(data=lst, columns = ["name"])
 by_name = products.groupby('name')
 print("The products that a customer can buy with 100-150 euros are:")
 print(by_name.size())
-print("In total they are:",len(products), "products of which", len(by_name),"are unique" )
+print("In total they are:",len(products), "products belonging in", len(by_name),"different categories" )
 
 # 5th question
 ''' Αν κάνουμε αναζήτηση με τον όρο 'HANDBAG', θα λάβουμε συνολικά 13 ξεχωριστά προϊόντα '''
 contains_handbag = df.loc[df['Description'].str.contains("HANDBAG",case = False)]
 print("The products that include the word HANDBAG are: ")
 print(contains_handbag['Description'].unique())
-print("In total they are:",len(contains_handbag), "products of which", len(contains_handbag['Description'].unique()),"are unique")
+print("In total they are:",len(contains_handbag), "products belonging in", len(contains_handbag['Description'].unique()),"different categories")
 
 
