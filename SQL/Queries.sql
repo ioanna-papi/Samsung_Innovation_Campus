@@ -1,3 +1,5 @@
+
+
 /* 1st question */
 SELECT *
   FROM [hr].[dbo].[employees]
@@ -31,4 +33,16 @@ SELECT *
  SELECT * FROM [hr].[dbo].[employees] WHERE EMPLOYEE_ID NOT IN
  (SELECT TOP((SELECT COUNT(*) FROM [hr].[dbo].[employees] ) -20 )EMPLOYEE_ID FROM [hr].[dbo].[employees])
 
+ /* 8th question */
+SELECT [FIRST_NAME], [LAST_NAME], [HIRE_DATE]
+  FROM [hr].[dbo].[employees]
+  WHERE HIRE_DATE < (SELECT HIRE_DATE FROM [hr].[dbo].[employees] WHERE LAST_NAME = 'Jones')
 
+/* 9th question */
+SELECT MONTH (HIRE_DATE) from [hr].[dbo].[employees]
+
+/* 10th question */
+SELECT * 
+  FROM [hr].[dbo].[employees]
+  WHERE LEN(FIRST_NAME)>=5
+  
