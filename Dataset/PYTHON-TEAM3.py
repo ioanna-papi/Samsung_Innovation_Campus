@@ -35,6 +35,7 @@ df.info()
 print("Total number of records: ", len(df))
     
 # DATASET CLEARING
+''' Τα ερωτήματα 2 και 3, καθώς περιλαμβάνουν δομή επανάληψης αργούν αρκετά να τρέξουν, όμως βγάζουν σωστό αποτέλεσμα '''
 
 # 1st question
 ''' Συνολικά αφαιρέθηκαν 135.080 εγγραφές. Άρα το dataset έχει μέγεθος 406.829 '''
@@ -57,5 +58,7 @@ for x in df.index :
         df.drop(x, inplace = True)
      
 # 4th question
+df['ItemTotal'] = df['Quantity'] * df['UnitPrice']
+
 
  
