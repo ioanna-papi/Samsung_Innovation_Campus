@@ -1,6 +1,6 @@
 # Samsung_Innovation_Campus
 
-# 1) PYTHON - DATAFRAME:
+# 1) Python - Dataframe:
 
 # 2) SQL:
 # Instructions
