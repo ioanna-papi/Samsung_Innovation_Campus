@@ -15,4 +15,9 @@ df = pd.read_csv('C:/Users/User/Documents/data.csv' ,sep  = ',', header= 'infer'
 print(df.tail(5))
 
 # 3rd question
+columns_list = df.columns
+print("Number of columns: ", len(columns_list))
+print("Columns names: ", columns_list)
+
+# 4th question
 
