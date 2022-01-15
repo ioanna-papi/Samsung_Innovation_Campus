@@ -26,8 +26,8 @@ print(df.dtypes)
 
 # 5th question
 df.info()
-''' Παρατηρούμε ότι στις στήλες Description και CustomerID, υπάρχουν 540455 και 406829 μη κενά σημεία.
-    Αυτό σημαίνει ότι κάποια κελιά είναι κενά, αφού στο σύνολο είναι 541909.
+''' Παρατηρούμε ότι στις στήλες Description και CustomerID, υπάρχουν 540.455 και 406.829 μη κενά σημεία.
+    Αυτό σημαίνει ότι κάποια κελιά είναι κενά, αφού στο σύνολο είναι 541.909.
     Άρα υπάρχουν στήλες με τιμές που λείπουν, η Description και η CustomerID. '''
 
 # 6th question
@@ -41,7 +41,7 @@ print("Total number of records: ", len(df))
 df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 
 # 2nd question
-''' Συνολικά αφαιρέθηκαν 1677 εγγραφές. Άρα το dataset έχει μέγεθος 405.152 '''
+''' Συνολικά αφαιρέθηκαν 1.677 εγγραφές. Άρα το dataset έχει μέγεθος 405.152 '''
 options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
 rslt_df = df[df['Description'].isin(options)]
 
