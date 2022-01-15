@@ -77,5 +77,17 @@ df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 print('The time period related to the data is: ', df['InvoiceDate'].min(), ' to ',  df['InvoiceDate'].max())
 
 # 4th question
+''' Συνολικά με ένας πελάτης που επιθυμεί να διαθέσει 100-150 ευρώ μπορεί να αγοράσει 6 προϊόντα '''
+lst = []
+for x in df.index :
+    if df.loc[x,'UnitPrice'] >= 100 and df.loc[x,'UnitPrice'] <= 150:
+        lst.append(df.loc[x, 'Description'])
+        
+products = pd.DataFrame(data=lst, columns = ["name"])
+by_name = products.groupby('name')
+print("The products that a customer can buy with 100-150 euros are:")
+by_name.size().index
+
+# 5th question
 
 
