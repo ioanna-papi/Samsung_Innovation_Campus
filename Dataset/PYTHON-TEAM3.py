@@ -75,6 +75,7 @@ for index_country, value in by_country.size().items():
 # 3rd question
 df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
 print('The time period related to the data is: ', df['InvoiceDate'].min(), ' to ',  df['InvoiceDate'].max())
+print('In total: ', df['InvoiceDate'].max() -  df['InvoiceDate'].min(), 'hours')
 
 # 4th question
 ''' Συνολικά ένας πελάτης που επιθυμεί να διαθέσει 100-150 ευρώ μπορεί να αγοράσει 6 προϊόντα '''
