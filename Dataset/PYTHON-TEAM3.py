@@ -33,3 +33,6 @@ df.info()
 # 6th question
 print("Total number of records: ", len(df))
     
+# DATASET CLEARING
+
+# 1st question
