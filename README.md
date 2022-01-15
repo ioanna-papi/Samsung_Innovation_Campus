@@ -10,13 +10,13 @@
 5. Are ther missing value columns? And if so, which ones?
 6. What is the total number of registrations?
 
-#Instructions for cleaning the dataset
+# Instructions for cleaning the dataset
 1. Remove from the dataset all rows that have NaN (missing values) in the 'Description' and / or 'CustomerID' columns. Tip: see the method [dropna] 
 2. Delete all lines where the 'Description' column is: "AMAZON FEE", "Manual", "SAMPLES", "POSTAGE" or "PACKING CHARGE". (You can delete any way you want, with one or more lines of code, the goal is to keep the correct entries)
 3. Remove from the dataset all records that have a negative value in the 'Quantity' column
 4. Create a column called ItemTotal that contains the result of the Quantity * UnitPrice operation per line to calculate the total cost per product category
 
-#Questions for understanding the dataset
+# Questions for understanding the dataset
 1. What is the number of unique / different customers (do not take into account all the registrations that have a ΝΑΝ instead of a price in the field of CustomerID)?
 2. Which countries does the company still trade with? 
 3. How long does the data we have available relate to? (Tip finding the maximum and minimum value of the InvoiceDate column)
