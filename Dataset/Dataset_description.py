@@ -25,3 +25,11 @@ print("Types of columns: \n")
 print(df.dtypes)
 
 # 5th question
+df.info()
+''' Παρατηρούμε ότι στις στήλες Description και CustomerID, υπάρχουν 540455 και 406829 μη κενά σημεία.
+    Αυτό σημαίνει ότι κάποια κελιά είναι κενά, αφού στο σύνολο είναι 541909.
+    Άρα υπάρχουν στήλες με τιμές που λείπουν, η Description και η CustomerID '''
+
+# 6th question
+
+    
