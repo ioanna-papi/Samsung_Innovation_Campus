@@ -51,4 +51,8 @@ for x in df.index:
             df.drop(x, inplace = True) 
         
 # 3rd question
-
+for x in df.index :
+    if df.loc[x,'Quantity'] < 0:
+        df.drop(x, inplace = True)
+        
+ 
