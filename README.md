@@ -1,8 +1,8 @@
 # Samsung_Innovation_Campus
 
-# 1) FOR PYTHON - DATAFRAME:
+# 1) PYTHON - DATAFRAME:
 
-# 2) FOR SQL:
+# 2) SQL:
 # Instructions
 1. Import the database backup BackupFull.sql
 2. Write queries in order to answer tasks 1-10
