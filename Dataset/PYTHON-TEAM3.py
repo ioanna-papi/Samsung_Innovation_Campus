@@ -44,7 +44,7 @@ for x in df.index :
         df.drop(x, inplace = True)
         
 options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
-rslt_df = drop.df[df['Description'].isin(options)]
+rslt_df = df[df['Description'].isin(options)]
 print('\nResult dataframe :\n', rslt_df)
         
 # 3rd question
