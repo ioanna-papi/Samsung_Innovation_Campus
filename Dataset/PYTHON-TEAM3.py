@@ -63,5 +63,10 @@ df['ItemTotal'] = df['Quantity'] * df['UnitPrice']
 # DATASET QUERIES
 
 # 1st question
+customers_by_id = df.groupby('CustomerID')
+print("Total number of different customers is: ", len(customers_by_id.size()))
+
+# 2nd question
+
 
  
