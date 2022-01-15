@@ -40,7 +40,7 @@ df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 
 # 2nd question
 for x in df.index :
-    if df.loc[x,'Description']=='AMAZON FEE' or df.loc[x,'Description']=='Manual' or df.loc[x,'Description']=='SAMPLES' or df.loc[x,'Description']=='POSTAGE' or df.loc[x,'Description']=='PACKING CHARGE':
+    if (df.loc[x,'Description']=='AMAZON FEE' or df.loc[x,'Description']=='Manual' or df.loc[x,'Description']=='SAMPLES' or df.loc[x,'Description']=='POSTAGE' or df.loc[x,'Description']=='PACKING CHARGE'):
         df.drop(x, inplace = True)
         
 # 3rd question
