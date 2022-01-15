@@ -38,7 +38,8 @@ SELECT *
 
  /* 7th question */
  SELECT * 
-  FROM [hr].[dbo].[employees] WHERE EMPLOYEE_ID NOT IN
+  FROM [hr].[dbo].[employees] 
+  WHERE EMPLOYEE_ID NOT IN
   (SELECT TOP((SELECT COUNT(*) FROM [hr].[dbo].[employees] ) -20 )EMPLOYEE_ID FROM [hr].[dbo].[employees])
 
  /* 8th question */
