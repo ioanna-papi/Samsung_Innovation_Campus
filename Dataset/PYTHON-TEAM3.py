@@ -36,7 +36,7 @@ print("Total number of records: ", len(df))
 # DATASET CLEARING
 
 # 1st question
-df = df.dropna(axis=0, subset=['Description', 'CustomerID'])
+df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 
 # 2nd question
 for x in df.index :
