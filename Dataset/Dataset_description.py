@@ -31,5 +31,5 @@ df.info()
     Άρα υπάρχουν στήλες με τιμές που λείπουν, η Description και η CustomerID. '''
 
 # 6th question
-
+print("Total number of records: ", len(df))
     
