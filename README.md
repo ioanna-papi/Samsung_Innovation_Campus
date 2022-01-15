@@ -2,6 +2,14 @@
 
 
 # 1) Python:
+# Questions about the description of the dataset
+1. Read data.csv
+2. Print the last 5 dataframe records
+3. How many (number) and which (names) columns has the dataset you uploaded?
+4. As what type of data, does the pandas library recognize the columns of the dataset?
+5. Are ther missing value columns? And if so, which ones?
+6. What is the total number of registrations?
+
 
 # 2) SQL:
 # Instructions
