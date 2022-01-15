@@ -74,7 +74,7 @@ for index_country, value in by_country.size().items():
 
 # 3rd question
 df['InvoiceDate'] = pd.to_datetime(df['InvoiceDate'])
-print('The time period related to the data is: ', df['InvoiceDate'].max() - df['InvoiceDate'].min())
+print('The time period related to the data is: ', df['InvoiceDate'].min(), ' to ',  df['InvoiceDate'].max())
 
 # 4th question
 
