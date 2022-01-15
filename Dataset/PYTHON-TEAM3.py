@@ -51,6 +51,7 @@ for x in df.index:
             df.drop(x, inplace = True) 
         
 # 3rd question
+''' Συνολικά αφαιρέθηκαν 8.631 εγγραφές. Άρα το dataset έχει μέγεθος 396.521 '''
 for x in df.index :
     if df.loc[x,'Quantity'] < 0:
         df.drop(x, inplace = True)
