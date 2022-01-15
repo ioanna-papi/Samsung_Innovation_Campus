@@ -9,6 +9,5 @@ import pandas as pd
 # DATASET DESCRIPTION
 
 # 1st question
-read ("data.csv")
 
 
