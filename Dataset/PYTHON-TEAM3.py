@@ -92,3 +92,5 @@ by_name.size().index
 contains_handbag = df.loc[df['Description'].str.contains("HANDBAG",case = False)]
 print("The products that include the word HANDBAG: ", contains_handbag)
 
+
+
