@@ -78,7 +78,7 @@ print('The time period related to the data is: ', df['InvoiceDate'].min(), ' to 
 print('In total: ', df['InvoiceDate'].max() -  df['InvoiceDate'].min(), 'hours')
 
 # 4th question
-''' Συνολικά ένας πελάτης που επιθυμεί να διαθέσει 100-150 ευρώ μπορεί να αγοράσει 6 διαφορετικά προϊόντα '''
+''' Συνολικά ένας πελάτης που επιθυμεί να διαθέσει 100-150 ευρώ μπορεί να αγοράσει 6 διαφορετικούς τύπους προϊόντων '''
 lst = []
 for x in df.index :
     if df.loc[x,'UnitPrice'] >= 100 and df.loc[x,'UnitPrice'] <= 150:
@@ -91,7 +91,7 @@ print(by_name.size())
 print("In total they are:",len(products), "products belonging in", len(by_name),"different categories" )
 
 # 5th question
-''' Αν κάνουμε αναζήτηση με τον όρο 'HANDBAG', θα λάβουμε συνολικά 13 ξεχωριστά προϊόντα '''
+''' Αν κάνουμε αναζήτηση με τον όρο 'HANDBAG', θα λάβουμε συνολικά 13 διαφορετικούς τύπους προϊόντων '''
 contains_handbag = df.loc[df['Description'].str.contains("HANDBAG",case = False)]
 print("The products that include the word HANDBAG are: ")
 print(contains_handbag['Description'].unique())
