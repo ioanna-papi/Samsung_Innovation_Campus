@@ -32,15 +32,33 @@ SELECT [FIRST_NAME],[LAST_NAME],[SALARY]
   WHERE SALARY < (SELECT AVG (SALARY) FROM [hr].[dbo].[employees])
 
 /* 6th question */
+
+/* Για εμφάνιση περιττών record id */
+ALTER TABLE [hr].[dbo].[employees]
+ADD Record_id int identity(1,1);
+
 SELECT *
   FROM [hr].[dbo].[employees]
-  WHERE EMPLOYEE_ID IN(SELECT EMPLOYEE_ID FROM [hr].[dbo].[employees] WHERE EMPLOYEE_ID%2 <> 0);
+  WHERE Record_id IN(SELECT Record_id FROM [hr].[dbo].[employees] WHERE Record_id % 2 <> 0);
+
+/*
+ALTER TABLE [hr].[dbo].[employees]
+DROP COLUMN Record_id;  
+*/
+
+/* Για εμφάνιση περιττών employee id */
+SELECT *
+  FROM [hr].[dbo].[employees]
+  WHERE EMPLOYEE_ID IN(SELECT EMPLOYEE_ID FROM [hr].[dbo].[employees] WHERE EMPLOYEE_ID % 2 <> 0);
 
  /* 7th question */
- SELECT * 
+
+ /* Αν επιλέξουμε τον πίνακα employees */
+SELECT * 
   FROM [hr].[dbo].[employees] 
-  WHERE EMPLOYEE_ID NOT IN
-  (SELECT TOP((SELECT COUNT(*) FROM [hr].[dbo].[employees] ) -20 )EMPLOYEE_ID FROM [hr].[dbo].[employees])
+  WHERE EMPLOYEE_ID NOT IN (SELECT TOP((SELECT COUNT(*) FROM [hr].[dbo].[employees] ) -20 )EMPLOYEE_ID FROM [hr].[dbo].[employees])
+
+/* Αντίστοιχες εντολές και για τους υπόλοιπους πίνακες */
 
  /* 8th question */
 SELECT [FIRST_NAME], [LAST_NAME], [HIRE_DATE]
