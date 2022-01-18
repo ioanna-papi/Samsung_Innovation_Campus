@@ -47,9 +47,8 @@ options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
 rslt_df = df[df['Description'].isin(options)]
 
 for x in df.index:
-    for y in rslt_df.index:
-        if (x == y ):
-            df.drop(x, inplace = True) 
+    if (x in rslt_df.index ):
+        df.drop(x, inplace = True) 
         
 # 3rd question
 ''' Συνολικά αφαιρέθηκαν 8.631 εγγραφές. Άρα το dataset έχει μέγεθος 396.521 '''
