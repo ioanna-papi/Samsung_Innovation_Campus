@@ -80,8 +80,7 @@ print('In total: ', df['InvoiceDate'].max() -  df['InvoiceDate'].min(), 'hours')
 lst = []
 for x in df.index :
     if df.loc[x,'UnitPrice'] >= 100 and df.loc[x,'UnitPrice'] <= 150:
-        lst.append(df.loc[x, 'Description'])
-        
+        lst.append(df.loc[x, 'Description'])  
 products = pd.DataFrame(data=lst, columns = ["name"])
 by_name = products.groupby('name')
 print("The products that a customer can buy with 100-150 euros are:")
