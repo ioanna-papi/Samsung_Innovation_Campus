@@ -45,7 +45,6 @@ df = df.dropna(axis=0, how = 'any', subset=['Description', 'CustomerID'])
 ''' Συνολικά αφαιρέθηκαν 1.677 εγγραφές. Άρα το dataset έχει μέγεθος 405.152 '''
 options = ['AMAZON FEE', 'SAMPLES', 'Manual', 'POSTAGE', 'PACKING CHARGE']
 rslt_df = df[df['Description'].isin(options)]
-
 for x in df.index:
     if (x in rslt_df.index ):
         df.drop(x, inplace = True) 
