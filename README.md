@@ -1,4 +1,4 @@
-![Στιγμιότυπο οθόνης (837)](https://user-images.githubusercontent.com/57221590/153102241-db516325-e9d9-4169-bff5-609306fad307.png)
+![Στιγμιότυπο οθόνης (841)](https://user-images.githubusercontent.com/57221590/153102871-a0c0916d-ee96-4119-ba96-72630f329b95.png)
 
 
 # SAMSUNG INNOVATION CAMPUS - UPSKILLING DIGITALLY
