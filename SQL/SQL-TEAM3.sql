@@ -1,12 +1,3 @@
-/*  
-	TEAM 3
-	TEAM MEMBERS:
-	IOANNA - MARIA PAPIDAKI
-	VASILIKI PSOROGIANNI
-	IOANNA DEDELOUDI  
-*/
-
-
 /* 1st question */
 SELECT *
   FROM [hr].[dbo].[employees]
